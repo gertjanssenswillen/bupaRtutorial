@@ -18,4 +18,6 @@ load_all_data <- function() {
     eventdataR::patients
     eventdataR::sepsis
     eventdataR::traffic_fines
+    message("Data loaded into workspace")
+    return()
 }
