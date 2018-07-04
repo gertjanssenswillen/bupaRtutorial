@@ -1,0 +1,13 @@
+Package: bupaRtutorial
+Type: Package
+Title: Package with data for tutorial
+Version: 0.1.0
+Author: Gert Janssenswillen
+Maintainer: Gert Janssenswillen <gert.janssenswillen@uhasselt.be>
+Description: Load event data for tutorial on bupaR. 
+Encoding: UTF-8
+LazyData: true
+Imports: eventdataR
+URL: https://www.bupar.net
+RoxygenNote: 6.0.1
+License: MIT + file LICENSE
