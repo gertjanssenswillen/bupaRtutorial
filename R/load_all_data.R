@@ -12,10 +12,12 @@ load_all_data <- function() {
     data("emergency")
     data("human_resources")
     data("order_to_cash")
+    data("daily_living")
     data("phone_repair")
     eventdataR::hospital
     eventdataR::hospital_billing
     eventdataR::patients
     eventdataR::sepsis
     eventdataR::traffic_fines
+    message("All data loaded")
 }

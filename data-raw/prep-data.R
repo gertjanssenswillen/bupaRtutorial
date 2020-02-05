@@ -3,7 +3,7 @@
 library(purrr)
 library(dplyr)
 
-list.files("data-raw") -> files
+list.files("data-raw") %>% str_subset("prep", negate = T) -> files
 
 library(stringr)
 
@@ -13,10 +13,11 @@ for (file in files) {
     assign(name, data)
 
 }
-devtools::use_data(bpi2014, overwrite = T, compress = "xz")
-devtools::use_data(claims, overwrite = T, compress = "xz")
-devtools::use_data(eating_patterns, overwrite = T, compress = "xz")
-devtools::use_data(emergency, overwrite = T, compress = "xz")
-devtools::use_data(human_resources, overwrite = T, compress = "xz")
-devtools::use_data(order_to_cash, overwrite = T, compress = "xz")
-devtools::use_data(phone_repair, overwrite = T, compress = "xz")
+usethis::use_data(bpi2014, overwrite = T, compress = "xz")
+usethis::use_data(claims, overwrite = T, compress = "xz")
+usethis::use_data(eating_patterns, overwrite = T, compress = "xz")
+usethis::use_data(emergency, overwrite = T, compress = "xz")
+usethis::use_data(human_resources, overwrite = T, compress = "xz")
+usethis::use_data(order_to_cash, overwrite = T, compress = "xz")
+usethis::use_data(phone_repair, overwrite = T, compress = "xz")
+usethis::use_data(daily_living, overwrite = T, compress = "xz")
