@@ -11,3 +11,5 @@ Imports: eventdataR
 URL: https://www.bupar.net
 RoxygenNote: 6.1.1
 License: MIT + file LICENSE
+Depends: 
+    R (>= 2.10)

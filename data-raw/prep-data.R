@@ -10,6 +10,7 @@ library(stringr)
 for (file in files) {
     name <- str_remove(str_remove(file, "tutorial_"), ".RDS")
     data <- readRDS(paste0("data-raw/", file))
+    data <- eventlog(data)
     assign(name, data)
 
 }
